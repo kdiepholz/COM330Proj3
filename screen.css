@@ -14,7 +14,6 @@ html {
 }
 
 /*adding css for top navigation*/
-
 h1,
 h2{
 	font-size:3.5em;
@@ -73,6 +72,12 @@ ul.nav{
 	background-color:white;
 	color:white;
 }
+ol{
+	background-color:#9c9c9c;
+	outline-style:solid;
+	outline-color:#0006b3;
+	outline-width:.2em;
+}
 p{
 	padding-top:.5em;
 	padding-bottom:.5em;
@@ -88,6 +93,7 @@ p1{
 p1.using{
 	float:left;
 	padding-top:2em;
+	padding-bottom:3em;
 }
 p.resumeIntro{
 	text-align:center;
