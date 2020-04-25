@@ -64,7 +64,8 @@ figcaption{
 	padding-top:1em;
 	padding-bottom:1em;
 	font-family:monospace;
-	font-size:1.5em;
+	font-size:1em;
+	font-weight:bold;
 }
 img{
 	display:block;
@@ -72,10 +73,15 @@ img{
 	margin-right:auto;
 	max-width:50%;
 }
+figure,figcaption,img { display: block; }
 h2.about-me,
-h2.swimming{
+h2.swimming,
+h2.videogames,
+h2.climbing{
+	font-size:2em;
 	padding-bottom:.5em;
 }
+
 footer {
   position: fixed;
   bottom: 0;
