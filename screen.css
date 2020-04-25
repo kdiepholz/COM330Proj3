@@ -73,13 +73,28 @@ img{
 	margin-right:auto;
 	max-width:50%;
 }
-figure,figcaption,img { display: block; }
+figure,figcaption,img { 
+	display: block; 
+}
+
 h2.about-me,
 h2.swimming,
 h2.videogames,
 h2.climbing{
 	font-size:2em;
 	padding-bottom:.5em;
+}
+
+ul.hobbies{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(100px, 1fr));
+	grid-gap:.5rem 1rem;
+}
+.hobbies li{
+	display:flex;
+	flex-flow:column;
+	padding-left:2em;
+	padding-right:2em;
 }
 
 footer {
