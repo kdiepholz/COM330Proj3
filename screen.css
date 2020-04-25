@@ -36,8 +36,9 @@ h4{
 	font-weight:bold;
 }
 h5{
-	font-size:1.5em;
-	font-family:monospace;
+	font-size:1.25em;
+	font-family:Seriff;
+	
 }
 h5.last{
 	padding-bottom:3em;
@@ -122,6 +123,13 @@ ul.hobbies{
 	grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
 	grid-gap:.5rem 1rem;
 }
+.contactInfo li{
+	font-size:3em;
+	padding:2em;
+	font-style:monospace;
+	font-weight:bold;
+	text-align:center;
+}
 .hobbies li{
 	display:flex;
 	flex-flow:column;
@@ -141,7 +149,7 @@ footer {
 }
 
 @media screen and (max-width: 960px) {
-  .nav {
+.nav {
     display: flex;
     flex-flow: row nowrap;
     margin-left: -6px;
@@ -151,14 +159,56 @@ footer {
     flex: 1 0 auto;
     margin-left: 12px;
   }
-  .nav a {
+.nav a {
     border-radius: 6px;
   }
-  ul.hobbies{
+ ul.hobbies{
 	  display:block;
   }
-  .hobbies img{
+ .hobbies img{
 	  height:auto;
 	  width:auto;
   }
+ .contactInfo li{
+	font-size:1.5em;
+	padding:1em;
+	font-style:monospace;
+	font-weight:bold;
+	text-align:center;
+}
+img{
+	height:auto;
+	width:auto;
+}
+h1,
+h2{
+	font-size:2em;
+	font-weight:bold;
+	font-family:monospace;
+	padding-bottom:.75em;
+	text-align:center;
+	padding-top:.5em;
+}
+h3{
+	font-size:1.5em;
+	font-weight:bold;
+	padding-bottom:.5em;
+	padding-top:.5em;
+	text-decoration:underline;
+}
+h4{
+	font-size:1em;
+	font-weight:bold;
+}
+h5{
+	font-size:.75em;
+	font-family:Seriff;
+	
+}
+p{
+	padding-top:.5em;
+	padding-bottom:.5em;
+	font-family:Seriff;
+	font-size:.75em;
+}
 }
