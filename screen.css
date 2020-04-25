@@ -96,7 +96,10 @@ ul.hobbies{
 	padding-left:1em;
 	padding-right:1em;
 }
-
+.hobbies img{
+	height:300px;
+	width:600px;
+}
 footer {
   position: fixed;
   bottom: 0;
@@ -121,5 +124,9 @@ footer {
   }
   ul.hobbies{
 	  display:block;
+  }
+  .hobbies img{
+	  height:auto;
+	  width:auto;
   }
 }
