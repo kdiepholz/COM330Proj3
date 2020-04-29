@@ -23,6 +23,15 @@ h2{
 	text-align:center;
 	padding-top:1em;
 }
+h1.name,
+h1.Hobbies,
+h1.Resume,
+h1.contact{
+	margin-top:30px;
+}
+h2.about{
+	text-decoration:underline;
+}
 h3{
 	font-size:2.5em;
 	font-weight:bold;
@@ -42,35 +51,39 @@ h5{
 h5.last{
 	padding-bottom:3em;
 }
-.nav a{
+.nav {
+	position:fixed;
+	top:0;
+	left:0;
+	float:left;
 	text-align:center;
-	padding:20px 0 20px 0;
-	display:block;
-	background:#fc03db;
-	color:black;
+	width:100%;
+	height:40px;
+	color:white;
 	font-size:1.5em;
 	font-family:sans-serif;
 }
 .nav li{
 	display:inline-block;
 	width:20%;
-	margin:0;
-	padding:0;
-	padding-bottom:3em;
+
+}
+.nav a:link, a:visited{
+	color:white;
 }
 ul.nav{
 	width:100%;
 	padding:0;
 	list-style:none;
+	background:#140096;
 	text-align:center;
 }
 .nav a:hover{
-	background:white;
+	background:blue;
 	border:none;
 }
-.nav a.active{
-	background-color:white;
-	color:white;
+.nav a:active{
+	background:blue;
 }
 ol{
 	background-color:#9c9c9c;
@@ -114,6 +127,7 @@ img{
 }
 figure,figcaption,img { 
 	display: block; 
+	border-radius:25px;
 }
 
 h2.about-me,
@@ -216,5 +230,9 @@ p{
 	padding-bottom:.5em;
 	font-family:Seriff;
 	font-size:.75em;
+}
+p1{
+	padding:.5em;
+	font-size:1em
 }
 }
