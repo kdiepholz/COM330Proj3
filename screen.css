@@ -43,6 +43,9 @@ h4{
 	font-size:1.5em;
 	font-weight:bold;
 }
+h4.emailheader{
+    padding:.5em;
+}
 h5{
 	font-size:1.25em;
 	font-family:Seriff;
@@ -150,11 +153,26 @@ ul.hobbies{
 	font-weight:bold;
 	text-align:center;
 }
+ul.contactInfo{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+    grid-gap:.5rem 1rem;
+}
 .hobbies li{
 	display:flex;
 	flex-flow:column;
 	padding-left:1em;
 	padding-right:1em;
+}
+#email{
+    font-size:2em;
+    text-align:center;
+    padding:1em;
+}
+#phone{
+    font-size:1.5em;
+    text-align:center;
+    padding:1em;
 }
 .hobbies img{
 	height:300px;
@@ -231,8 +249,14 @@ p{
 	font-family:Seriff;
 	font-size:.75em;
 }
-p1{
+p.about{
 	padding:.5em;
 	font-size:1em
+    font-family:monospace;
+}
+p.using{
+    padding:.5em;
+    font-size:1em;
+    font-family:monospace;
 }
 }
