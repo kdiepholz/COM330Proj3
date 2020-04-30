@@ -97,13 +97,13 @@ p{
 	font-family:Seriff;
 	font-size:1.25em;
 }
-p1{
+p.about{
 	padding-top:.5em;
 	padding-bottom:.5em;
 	font-family:monospace;
 	font-size:1.5em;
 }
-p1.using{
+p.using{
 	float:left;
 	padding-top:2em;
 	padding-bottom:3em;
