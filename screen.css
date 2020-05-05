@@ -110,6 +110,8 @@ p.using{
 	float:left;
 	padding-top:2em;
 	padding-bottom:3em;
+	font-family:monospace;
+	font-size:1.5em;
 }
 p.resumeIntro{
 	text-align:center;
