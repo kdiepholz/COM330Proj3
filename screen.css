@@ -31,6 +31,12 @@ h1.contact{
 }
 h2.about{
 	text-decoration:underline;
+	padding-bottom:1em;
+}
+h2.swimming,
+h2.videogames,
+h2.climbing{
+	color:white;
 }
 h3{
 	font-size:2.5em;
@@ -85,6 +91,16 @@ ul.nav{
 	background:blue;
 	border:none;
 }
+#email a:hover{
+	background:white;
+}
+ul.programming-projects a:hover{
+	background:none;
+}
+a:hover{
+	background:blue;
+	border:none;
+}
 .nav a:active{
 	background:blue;
 }
@@ -93,6 +109,7 @@ ol{
 	outline-style:solid;
 	outline-color:#0006b3;
 	outline-width:.2em;
+	margin-bottom:1em;
 }
 p{
 	padding-top:.5em;
@@ -101,17 +118,15 @@ p{
 	font-size:1.25em;
 }
 p.about{
-	padding-top:.5em;
-	padding-bottom:.5em;
 	font-family:monospace;
 	font-size:1.5em;
-}
-p.using{
-	float:left;
-	padding-top:2em;
-	padding-bottom:3em;
-	font-family:monospace;
-	font-size:1.5em;
+	background-color:white;
+	padding:1em;
+	border-radius:25px;
+	text-align:center;
+	margin-bottom:1em;
+	white-space:pre-line;
+	
 }
 p.resumeIntro{
 	text-align:center;
@@ -124,15 +139,28 @@ figcaption{
 	font-size:1em;
 	font-weight:bold;
 }
+figure.headshot{
+	margin:auto;
+	max-height:50%;
+	max-width:50%;
+}
 img{
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
-	max-width:50%;
+	border-radius:25px;
+	max-width:75%;
+	max-height:75%;
 }
-figure,figcaption,img { 
+figure{ 
 	display: block; 
 	border-radius:25px;
+}
+figcaption{
+	display: block; 
+	border-radius:25px;
+	background-color:white;
+	padding:1em;
 }
 
 h2.about-me,
@@ -147,6 +175,15 @@ ul.hobbies{
 	display:grid;
 	grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
 	grid-gap:.5rem 1rem;
+	margin-bottom:2em;
+}
+.hobbies li{
+	display:flex;
+	flex-flow:column;
+	padding:1em;
+	background-color:#140096;
+	border-radius:25px;
+	margin-bottom:1em;
 }
 .contactInfo li{
 	font-size:3em;
@@ -159,12 +196,6 @@ ul.contactInfo{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
     grid-gap:.5rem 1rem;
-}
-.hobbies li{
-	display:flex;
-	flex-flow:column;
-	padding-left:1em;
-	padding-right:1em;
 }
 #email{
     font-size:2em;
@@ -180,31 +211,31 @@ ul.contactInfo{
 	height:300px;
 	width:600px;
 }
-footer {
-  position: fixed;
-  bottom: 0;
+footer{
+  bottom: 0px;
   width: 100%;
   color: black;
-  text-align: center;
+  text-align:center;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
 .nav {
     display: flex;
     flex-flow: row nowrap;
     margin-left: -6px;
     margin-right: 6px;
+	font-size:1em;
   }
-  .nav li {
-    flex: 1 0 auto;
-    margin-left: 12px;
+.nav li {
+   flex: 1 0 auto;
+   margin-left: 12px;
   }
 .nav a {
     border-radius: 6px;
   }
- ul.hobbies{
-	  display:block;
-  }
+ul.hobbies{
+	display:block;
+}
  .hobbies img{
 	  height:auto;
 	  width:auto;
@@ -217,8 +248,12 @@ footer {
 	text-align:center;
 }
 img{
-	height:auto;
-	width:auto;
+	max-width:75%;
+	max-height:75%;
+}
+figure.headshot{
+	max-width:75%;
+	max-height:75%;
 }
 h1,
 h2{
@@ -253,12 +288,15 @@ p{
 }
 p.about{
 	padding:.5em;
-	font-size:1em
+	font-size:1em;
     font-family:monospace;
 }
 p.using{
     padding:.5em;
     font-size:1em;
     font-family:monospace;
+}
+#email a{
+	font-size:.75em;
 }
 }
