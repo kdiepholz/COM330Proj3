@@ -190,12 +190,7 @@ ul.contactInfo{
 
 
 /* Responsive IMAGES*/
-}
-figure.headshot{
-	margin:auto;
-	max-height:50%;
-	max-width:50%;
-}
+
 img{
 	display:block;
 	margin-left:auto;
@@ -203,6 +198,11 @@ img{
 	border-radius:25px;
 	max-width:75%;
 	max-height:75%;
+}
+.headshot{
+	margin:auto;
+	max-height:50%;
+	max-width:50%;
 }
 figure{ 
 	display: block; 
