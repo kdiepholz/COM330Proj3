@@ -13,7 +13,7 @@ html {
   text-size-adjust: 100%;
 }
 
-/*adding css for top navigation*/
+/*HEADERS AND PARAGRAPH FONT */
 h1,
 h2{
 	font-size:3.5em;
@@ -37,6 +37,8 @@ h2.swimming,
 h2.videogames,
 h2.climbing{
 	color:white;
+	font-size:2em;
+	padding-bottom:.5em;
 }
 h3{
 	font-size:2.5em;
@@ -60,6 +62,48 @@ h5{
 h5.last{
 	padding-bottom:3em;
 }
+p{
+	padding-top:.5em;
+	padding-bottom:.5em;
+	font-family:Seriff;
+	font-size:1.25em;
+}
+p.about{
+	font-family:Monospace;
+	font-size:1.5em;
+	background-color:white;
+	padding:1em;
+	border-radius:25px;
+	text-align:center;
+	margin-bottom:1em;
+	white-space:pre-line;
+	
+}
+p.resumeIntro{
+	text-align:center;
+	font-weight:bold;
+}
+figcaption{
+	padding-top:1em;
+	padding-bottom:1em;
+	font-family:Monospace;
+	font-size:1em;
+	font-weight:bold;
+}
+#email{
+    font-size:2em;
+    text-align:center;
+    padding:1em;
+}
+#phone{
+    font-size:1.5em;
+    text-align:center;
+    padding:1em;
+}
+
+
+
+/* NAVIGATION BAR */
 .nav {
 	position:fixed;
 	top:0;
@@ -104,6 +148,9 @@ a:hover{
 .nav a:active{
 	background:blue;
 }
+
+
+/* ORDERED AAND UNORDERED LISTS */
 ol{
 	background-color:#9c9c9c;
 	outline-style:solid;
@@ -111,33 +158,38 @@ ol{
 	outline-width:.2em;
 	margin-bottom:1em;
 }
-p{
-	padding-top:.5em;
-	padding-bottom:.5em;
-	font-family:Seriff;
-	font-size:1.25em;
+/* grid display for hobbies*/
+ul.hobbies{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+	grid-gap:.5rem 1rem;
+	margin-bottom:2em;
 }
-p.about{
-	font-family:monospace;
-	font-size:1.5em;
-	background-color:white;
+.hobbies li{
+	display:flex;
+	flex-flow:column;
 	padding:1em;
+	background-color:#140096;
 	border-radius:25px;
-	text-align:center;
 	margin-bottom:1em;
-	white-space:pre-line;
-	
 }
-p.resumeIntro{
-	text-align:center;
-	font-weight:bold;
-}
-figcaption{
-	padding-top:1em;
-	padding-bottom:1em;
+.contactInfo li{
+	font-size:3em;
+	padding:2em;
 	font-family:monospace;
-	font-size:1em;
 	font-weight:bold;
+	text-align:center;
+}
+
+/* Making Grid Display for contact information*/
+ul.contactInfo{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+    grid-gap:.5rem 1rem;
+}
+
+
+/* Responsive IMAGES*/
 }
 figure.headshot{
 	margin:auto;
@@ -162,55 +214,13 @@ figcaption{
 	background-color:white;
 	padding:1em;
 }
-
-h2.about-me,
-h2.swimming,
-h2.videogames,
-h2.climbing{
-	font-size:2em;
-	padding-bottom:.5em;
-}
-
-ul.hobbies{
-	display:grid;
-	grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
-	grid-gap:.5rem 1rem;
-	margin-bottom:2em;
-}
-.hobbies li{
-	display:flex;
-	flex-flow:column;
-	padding:1em;
-	background-color:#140096;
-	border-radius:25px;
-	margin-bottom:1em;
-}
-.contactInfo li{
-	font-size:3em;
-	padding:2em;
-	font-style:monospace;
-	font-weight:bold;
-	text-align:center;
-}
-ul.contactInfo{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
-    grid-gap:.5rem 1rem;
-}
-#email{
-    font-size:2em;
-    text-align:center;
-    padding:1em;
-}
-#phone{
-    font-size:1.5em;
-    text-align:center;
-    padding:1em;
-}
 .hobbies img{
 	height:300px;
 	width:600px;
 }
+
+
+/* footer */
 footer{
   bottom: 0px;
   width: 100%;
@@ -218,34 +228,34 @@ footer{
   text-align:center;
 }
 
+
+/*when screen is less than 800px...*/
+
 @media screen and (max-width: 800px) {
 .nav {
-    display: flex;
+	display: flex;
     flex-flow: row nowrap;
     margin-left: -6px;
     margin-right: 6px;
 	font-size:1em;
-  }
+}
 .nav li {
    flex: 1 0 auto;
    margin-left: 12px;
-  }
+}
 .nav a {
     border-radius: 6px;
-  }
+}
 ul.hobbies{
 	display:block;
 }
  .hobbies img{
 	  height:auto;
 	  width:auto;
-  }
+}
  .contactInfo li{
 	font-size:1.5em;
 	padding:1em;
-	font-style:monospace;
-	font-weight:bold;
-	text-align:center;
 }
 img{
 	max-width:75%;
@@ -289,12 +299,6 @@ p{
 p.about{
 	padding:.5em;
 	font-size:1em;
-    font-family:monospace;
-}
-p.using{
-    padding:.5em;
-    font-size:1em;
-    font-family:monospace;
 }
 #email a{
 	font-size:.75em;
